@@ -1,0 +1,16 @@
+.collapse {
+    justify-content: space-between;
+}
+.navbar-nav .btn {
+    margin-right: 1.5vh;
+    margin-bottom: 1vh;
+}
+.bg-dark .table tbody tr td {
+    color: white;
+}
+.bg-dark .table tbody tr td {
+    color: white;
+}
+.bg-dark h3 {
+    color: white;
+}
