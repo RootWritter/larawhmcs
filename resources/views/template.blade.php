@@ -29,10 +29,6 @@
                         <a class="nav-link" href="{{ url('/pricing') }}"><i class="fas fa-tags"></i> Harga</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav">
-                    <li><a href="{{ url('/sign-in') }}" class="btn btn-dark w-100"><i class="fas fa-sign-in-alt"></i> Login</a></li>
-                    <li><a href="{{ url('/sign-up') }}" class="btn btn-warning w-100"><i class="fas fa-user-plus"></i> Register</a></li>
-                </ul>
             </div>
         </div>
     </nav>

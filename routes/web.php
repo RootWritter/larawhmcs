@@ -15,11 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\IndexController::class, 'index']);
 Route::get('/new-order', [\App\Http\Controllers\IndexController::class, 'neworder']);
-Route::get('/sign-in', [\App\Http\Controllers\AuthController::class, 'login']);
-Route::get('/sign-up', [\App\Http\Controllers\AuthController::class, 'register']);
-Route::post('/sign-in', [\App\Http\Controllers\AuthController::class, 'doLogin']);
-Route::post('/sign-up', [\App\Http\Controllers\AuthController::class, 'doRegister']);
 
 Route::group(['prefix' => 'ajax', 'as' => 'ajax.'], function () {
     Route::post('/get-product', [\App\Http\Controllers\AjaxController::class, 'getproductDetail']);
+    Route::post('/get-domain', [\App\Http\Controllers\AjaxController::class, 'getDomainPricing']);
+    Route::post('/sign-in', [\App\Http\Controllers\AjaxController::class, 'login']);
+    Route::post('/sign-up', [\App\Http\Controllers\AjaxController::class, 'register']);
+    Route::post('/do-order', [\App\Http\Controllers\AjaxController::class, 'order']);
 });
